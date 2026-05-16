@@ -1,0 +1,117 @@
+:root{
+    --back: rgb(34, 34, 72);
+    --backTow: rgb(17, 17, 53);
+    --backThree: rgb(0, 0, 178);
+}
+
+*{
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background: #0b0b1f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.body{
+    width: 90%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: var(--back);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.contener{
+    display: flex;
+    flex-direction: column;
+}
+
+.img{
+    width: 100%;
+}
+
+textarea{
+    direction: rtl;
+
+    width: 100%;
+    height: 150px;
+    resize: none;
+    border: none;
+
+    border-radius: 5px;
+
+    padding: 12px;
+    background-color: var(--backTow);
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    outline: none;
+}
+
+.controls{
+    display: flex;
+    gap: 8px;
+}
+
+button{
+    flex: 1;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 12px;
+    border: none;
+    background-color: var(--backThree);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+    direction: rtl;
+}
+
+button:hover{
+    filter: brightness(1.2);
+}
+
+button:active{
+    transform: scale(0.96);
+}
+
+i{
+    margin: 2px;
+}
+
+.hidden{display: none !important;}
+
+@media (max-width: 600px){
+
+    .body{
+        width: 95%;
+        padding: 12px;
+    }
+
+    .img{
+        height: 180px;
+    }
+
+    textarea{
+        height: 130px;
+        font-size: 15px;
+    }
+
+    button{
+        font-size: 15px;
+        padding: 10px;
+    }
+}
